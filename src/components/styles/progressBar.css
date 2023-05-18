@@ -1,0 +1,22 @@
+.progress {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 360.02px;
+  height: 20.41px;
+  left: 91.16px;
+  top: 264.85px;
+
+  /* Degrado azul */
+
+  background: linear-gradient(
+    180deg,
+    #31969d 0%,
+    #65e6f4 31.77%,
+    #24aebd 66.15%,
+    #1299a8 98.96%
+  );
+  /* Negro 2 */
+
+  border: 1px solid #111111;
+}
