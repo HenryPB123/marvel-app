@@ -11,8 +11,6 @@ const LogoMarvel = () => {
     dispatch(getCharacters());
   }, [dispatch]);
 
-  characters.map((c) => console.log(c.title));
-
   return (
     <div className="container">
       <div className="row">
@@ -26,11 +24,12 @@ const LogoMarvel = () => {
           <h2>Home</h2>
         </div>
         <div className="col-3 mt-5">
-          <option value="">Personajes</option>
           <select>
-            {characters?.map((character) => {
-              <option>{character.title}</option>;
-            })}
+            <option value="">Personajes</option>
+            {characters &&
+              characters.map((character) => {
+                return <option key={character.id}>{character.name}</option>;
+              })}
           </select>
         </div>
       </div>

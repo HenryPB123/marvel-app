@@ -1,9 +1,11 @@
 import "./App.css";
-import Home from "./components/home";
+
 import ProgressBar from "./components/ProgressBar";
 
 import VideoMarvel from "./components/VideoMarvel";
 import MarvelImage from "./components/MarvelImage";
+import Cards from "./components/Cards";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -23,23 +25,8 @@ function App() {
             <MarvelImage />
           </div>
         </div>
-        <div className="row">
-          <div className="col">
-            <div className="row">card</div>
-            <div className="row">card</div>
-          </div>
-          <div className="col">
-            <div className="row">card</div>
-            <div className="row">card</div>
-          </div>
-          <div className="col">
-            <div className="row">card</div>
-            <div className="row">card</div>
-          </div>
-          <div className="col">
-            <div className="row">card</div>
-            <div className="row">card</div>
-          </div>
+        <div className="container">
+          <Cards />
         </div>
         <div className="row">
           <div className="col">pagination</div>

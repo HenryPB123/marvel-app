@@ -6,10 +6,21 @@ export const getCharacters = () => {
   return (dispatch) => {
     axios
       .get(
-        `http://gateway.marvel.com/v1/public/comics?ts=1&apikey=1fd8623e306c639e6d696bd43bfce517&hash=361fc32da3b7eb20c46f7270d41071ef`
+        `https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=1fd8623e306c639e6d696bd43bfce517&hash=361fc32da3b7eb20c46f7270d41071ef`
       )
       .then((response) => {
-        dispatch(setCharacters(response.data.data.results));
+        response = response.data.data.results;
+
+        let results = [];
+        response.map((character) =>
+          results.push({
+            id: character.id,
+            name: character.name,
+            image: `${character.thumbnail.path}.${character.thumbnail.extension}`,
+          })
+        );
+
+        dispatch(setCharacters(results));
       })
       .catch((e) => console.log(e));
   };
