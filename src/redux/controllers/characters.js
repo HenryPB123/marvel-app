@@ -17,6 +17,8 @@ export const getCharacters = () => {
             id: character.id,
             name: character.name,
             image: `${character.thumbnail.path}.${character.thumbnail.extension}`,
+            comics: character.comics.available,
+            series: character.series.available,
           })
         );
 

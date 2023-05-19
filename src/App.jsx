@@ -10,7 +10,7 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className="container-fluid">
-      <div className="col">
+      <div className="col justify-content-between">
         <div className="row">
           <Home />
         </div>
@@ -27,9 +27,6 @@ function App() {
         </div>
         <div className="container">
           <Cards />
-        </div>
-        <div className="row">
-          <div className="col">pagination</div>
         </div>
       </div>
     </div>
