@@ -2,10 +2,8 @@ import LogoMarvel from "./LogoMarvel";
 
 const Home = () => {
   return (
-    <div className="container-fluid bg-black text-white">
-      <div className="container">
-        <LogoMarvel />
-      </div>
+    <div className="container-fluid bg-black bg-opacity-75 text-white">
+      <LogoMarvel />
     </div>
   );
 };

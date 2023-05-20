@@ -7,10 +7,11 @@
   background-size: cover;
 } */
 body {
-  margin: 2rem;
+  /* margin: 2rem; */
   min-width: 100vh;
   min-height: 95vh;
-  background-image: url("https://www.troyes-obs.fr/wp-content/uploads/2020/06/marvel-logo-wallpaper_1.jpgfit19301041.jpeg");
+  background: linear-gradient(#54535a, #1e1b32);
+  /* background-image: url("https://www.troyes-obs.fr/wp-content/uploads/2020/06/marvel-logo-wallpaper_1.jpgfit19301041.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: hard-light;

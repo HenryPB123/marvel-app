@@ -18,15 +18,15 @@ const Pagination = ({
         pageNumbers.map((number) => {
           return (
             <button
-              className="btn btn-dark m-3 text-white"
+              className="btn btn-black bg-gradient border border-white m-3 text-white"
               key={number}
               onClick={() => pagination(number)}
               style={
                 number === currentPage
                   ? {
-                      backgroundColor: "#1d1a19",
+                      backgroundColor: "#1b144c",
                       color: "white",
-                      border: "solid 2px #004e89",
+                      border: "solid 2px #052238",
                     }
                   : {}
               }

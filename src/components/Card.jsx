@@ -4,7 +4,7 @@
 const Card = ({ name, image, comics, series }) => {
   return (
     <div
-      className="card m-2 bg-dark bg-gradient text-white text-center p-2 "
+      className="card m-2 bg-black bg-gradient text-white text-center p-2 "
       style={{ width: "15rem" }}
     >
       <h6 className="card-title">{name}</h6>

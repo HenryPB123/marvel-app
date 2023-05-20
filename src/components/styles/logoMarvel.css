@@ -1,0 +1,6 @@
+.notif {
+  color: aliceblue;
+}
+.notif:hover {
+  color: brown;
+}

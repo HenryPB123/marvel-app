@@ -1,36 +1,50 @@
 // import React from "react";
 
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getCharacters } from "../redux/controllers/characters";
+import "./styles/logoMarvel.css";
 
 const LogoMarvel = () => {
-  const { characters } = useSelector((state) => state.characters);
+  // const { characters } = useSelector((state) => state.characters);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCharacters());
   }, [dispatch]);
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
+    <div className="container justify-content-between   d-flex flex-row bd-highlight ml-0 align-middle">
+      <div className="row align-items-center">
+        <div className="col ">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNP_tur6G4IJhf5Z3yaVxSGe1LTCb8oIu8Q&usqp=CAU"
+            className="m-2"
+            src="https://movie-fanatic-res.cloudinary.com/iu/s---cZThGjz--/f_auto,q_auto/v1405102365/marvel-studios-movie-logo"
             alt="marvelLogo"
+            style={{ height: "6rem", width: "15rem" }}
           />
         </div>
-        <div className="col-3 mt-5">
-          <h2>Home</h2>
+        <div className="col m-4 align-middle">
+          <h3>Home</h3>
         </div>
-        <div className="col-3 mt-5">
-          <select>
+        <div className="col m-4 align-middle">
+          <h3>Personajes</h3>
+          {/* <select>
             <option value="">Personajes</option>
             {characters &&
               characters.map((character) => {
                 return <option key={character.id}>{character.name}</option>;
               })}
-          </select>
+          </select> */}
+        </div>
+      </div>
+      <div className="row  align-items-center ">
+        <div className="col">
+          <span className="material-symbols-outlined notif">notifications</span>
+        </div>
+
+        <div className="col">
+          <span className="material-symbols-outlined notif">settings</span>
         </div>
       </div>
     </div>
