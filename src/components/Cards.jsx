@@ -12,7 +12,6 @@ const Cards = () => {
   useEffect(() => {
     dispatch(getCharacters());
   }, [dispatch]);
-  console.log("wwwww", characters);
 
   //pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,7 +27,7 @@ const Cards = () => {
     setCurrentPage(pageNumber);
   }
   return (
-    <div className="container">
+    <div className="container mt-4">
       <div className="row">
         {currentCharacters &&
           currentCharacters.map((character) => {

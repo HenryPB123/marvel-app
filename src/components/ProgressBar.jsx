@@ -3,7 +3,7 @@
 const ProgressBar = () => {
   return (
     <div
-      className="container col p-3 text-white  bg-dark bg-gradient "
+      className="container col p-5 text-white rounded bg-black bg-gradient  "
       style={{ width: "100%", height: "100%" }}
     >
       <div className="row">

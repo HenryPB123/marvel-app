@@ -3,6 +3,7 @@
 const VideoMarvel = () => {
   return (
     <iframe
+      className="rounded"
       width="100%"
       height="100%"
       src="https://www.youtube.com/embed/tXXQOC4HugE"
