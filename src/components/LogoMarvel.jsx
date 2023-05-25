@@ -1,13 +1,13 @@
 // import React from "react";
 
 import { useEffect } from "react";
-// import { useDispatch, useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
 import { getCharacters } from "../redux/controllers/characters";
 import "./styles/logoMarvel.css";
 
 const LogoMarvel = () => {
-  // const { characters } = useSelector((state) => state.characters);
+  const { characters } = useSelector((state) => state.characters);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCharacters());
@@ -15,7 +15,10 @@ const LogoMarvel = () => {
 
   return (
     <div className="container justify-content-between   d-flex flex-row bd-highlight ml-0 align-middle">
-      <div className="row align-items-center">
+      <div
+        className="row align-items-center justify-content-around"
+        style={{ width: "70%" }}
+      >
         <div className="col ">
           <img
             className="m-2"
@@ -28,14 +31,13 @@ const LogoMarvel = () => {
           <h3>Home</h3>
         </div>
         <div className="col m-4 align-middle">
-          <h3>Personajes</h3>
-          {/* <select>
+          <select className="form-select bg-dark border-0  text-white form-select-lg mb-3">
             <option value="">Personajes</option>
             {characters &&
               characters.map((character) => {
                 return <option key={character.id}>{character.name}</option>;
               })}
-          </select> */}
+          </select>
         </div>
       </div>
       <div className="row  align-items-center ">

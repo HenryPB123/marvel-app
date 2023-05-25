@@ -27,8 +27,8 @@ const Cards = () => {
     setCurrentPage(pageNumber);
   }
   return (
-    <div className="container mt-4">
-      <div className="row">
+    <div className="container-fluid mt-4  ">
+      <div className="row justify-content-between">
         {currentCharacters &&
           currentCharacters.map((character) => {
             return (

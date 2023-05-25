@@ -6,7 +6,13 @@ import VideoMarvel from "./VideoMarvel";
 
 const SecondBar = () => {
   return (
-    <div className="bg-dark bg-gradient p-3  row" style={{ height: "16rem" }}>
+    <div
+      className=" p-3  row"
+      style={{
+        height: "100%",
+        background: " linear-gradient( #0e0e0f,#192f39)",
+      }}
+    >
       <div className="col ">
         <ProgressBar />
       </div>
