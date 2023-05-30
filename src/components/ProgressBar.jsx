@@ -13,11 +13,11 @@ const ProgressBar = () => {
       <div className="row m-2 mt-3 fs-5">Meta de Producción: 200 </div>
       <div className="row">
         <div
-          className="progress m-2 rounded-0 p-0"
+          className="progress m-2 rounded-0 p-0 border border-secondary "
           style={{ height: "1.5rem" }}
         >
           <div
-            className="progress-bar-striped bg-primary "
+            className="progress-bar-striped bg-dark"
             aria-valuenow="10"
             aria-valuemin="0"
             aria-valuemax="200"
