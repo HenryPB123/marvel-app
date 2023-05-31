@@ -36,17 +36,7 @@ export const getCharacter = (name) => {
       .then((response) => {
         response = response.data.data.results;
         let character = response.filter((character) => character.name === name);
-        // let results = [];
-        // response.map((character) =>
-        //   results.push({
-        //     id: character.id,
-        //     name: character.name,
-        //     image: `${character.thumbnail.path}.${character.thumbnail.extension}`,
-        //     comics: character.comics.available,
-        //     series: character.series.available,
-        //   })
-        // );
-        console.log("aaaaaaaaaaaaaaaa", character);
+
         dispatch(setCharacter(character));
       })
       .catch((e) => console.log(e));

@@ -1,17 +1,10 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
+import "./styles/card.css";
 
 const Card = ({ name, image, comics, series }) => {
   return (
-    <div
-      className="card m-2  bg-gradient border-0 text-white   text-center p-2  "
-      style={{
-        width: "15rem",
-        backgroundColor: "#0d0d12",
-        color: "white",
-        border: "solid 2px #052238",
-      }}
-    >
+    <div className="card_p card m-2  bg-gradient border-0 text-white   text-center p-2  ">
       <img
         src={image}
         style={{ height: "15rem", width: "14rem" }}
