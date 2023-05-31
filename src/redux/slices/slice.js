@@ -7,6 +7,7 @@ export const charactersSlice = createSlice({
 
   initialState: {
     characters: [],
+    character: [],
   }, //stado
 
   reducers: {
@@ -14,9 +15,12 @@ export const charactersSlice = createSlice({
     setCharacters: (state, action) => {
       state.characters = action.payload;
     },
+    setCharacter: (state, action) => {
+      state.character = action.payload;
+    },
   },
 });
 
-export const { setCharacters } = charactersSlice.actions;
+export const { setCharacters, setCharacter } = charactersSlice.actions;
 
 export default charactersSlice.reducer;
